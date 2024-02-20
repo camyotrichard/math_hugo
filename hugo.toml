@@ -1,7 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Math&more'
-theme = 'ananke'
+theme = 'shadocs'
 
 [markup]
   [markup.goldmark]
@@ -11,5 +11,9 @@ theme = 'ananke'
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['\[', '\]'], ['$$', '$$']]
           inline = [['\(', '\)']]
+
+  [markup.goldmark.renderer]
+    unsafe = true
+
 [params]
   math = true
